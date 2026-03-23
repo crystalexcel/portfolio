@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christabel Jalloh | Backend Developer Portfolio</title>
+  <style>
+    :root{
+      --bg1:#08142f; --bg2:#173b86; --card:#ffffff; --text:#0f172a;
+      --muted:#475569; --line:#dbe5f1; --accent:#3b82f6; --accent2:#8b5cf6;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#f3f7fb;line-height:1.6}
+    .hero{min-height:100vh;background:
+      radial-gradient(circle at 50% 45%, rgba(255,255,255,.12), transparent 28%),
+      radial-gradient(circle at 62% 86%, rgba(0,191,255,.15), transparent 22%),
+      linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:white;display:flex;align-items:center;justify-content:center;padding:40px 20px;text-align:center;position:relative;overflow:hidden}
+    .hero .inner{max-width:900px}
+    .tag{display:inline-block;font-size:14px;opacity:.85;margin-bottom:16px;border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:999px;backdrop-filter:blur(10px)}
+    h1{font-size:clamp(42px,8vw,82px);line-height:1.05;margin:0 0 12px;font-weight:800;letter-spacing:-.03em}
+    .subtitle{font-size:clamp(22px,3vw,38px);opacity:.88;margin:0 0 18px;font-weight:400}
+    .summary{max-width:760px;margin:0 auto 28px;font-size:clamp(16px,2vw,22px);opacity:.88}
+    .buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:28px 0 18px}
+    .btn{display:inline-block;text-decoration:none;padding:14px 22px;border-radius:14px;font-weight:700;transition:.2s ease;border:1px solid rgba(255,255,255,.2)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;box-shadow:0 10px 30px rgba(59,130,246,.25)}
+    .btn-secondary{background:rgba(255,255,255,.12);color:white;backdrop-filter:blur(8px)}
+    .btn:hover{transform:translateY(-2px)}
+    .socials{display:flex;justify-content:center;gap:16px;margin-top:18px;font-size:15px}
+    .socials a{color:white;text-decoration:none;opacity:.9}
+    .arrow{position:absolute;bottom:28px;font-size:34px;opacity:.75;animation:bounce 1.6s infinite}
+    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+    .container{width:min(1100px, 92%);margin:0 auto}
+    section{padding:82px 0}
+    .section-title{text-align:center;font-size:42px;margin:0 0 10px;letter-spacing:-.02em}
+    .underline{width:90px;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));margin:0 auto 26px;border-radius:999px}
+    .lead{text-align:center;max-width:850px;margin:0 auto 36px;color:var(--muted);font-size:19px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(15,23,42,.05)}
+    .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}
+    .highlight{padding:18px 20px;background:#f8fbff;border-radius:18px;border:1px solid #e4eef9}
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+    .skill{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+    .project{display:flex;flex-direction:column;gap:14px;background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 24px rgba(2,6,23,.04)}
+    .badge{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:#eef4ff;color:#1d4ed8;font-weight:700;width:max-content}
+    .project h3{margin:0;font-size:24px}
+    .project p{margin:0;color:var(--muted)}
+    .stack{display:flex;flex-wrap:wrap;gap:8px}
+    .stack span{font-size:12px;background:#f8fafc;border:1px solid var(--line);padding:7px 10px;border-radius:999px}
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+    .links a{text-decoration:none;font-weight:700;color:#1d4ed8}
+    .cta{text-align:center;background:linear-gradient(135deg,#0f172a,#172554);color:white;border-radius:30px;padding:42px 26px}
+    .footer{text-align:center;color:#64748b;padding:30px 20px 40px;font-size:14px}
+    @media (max-width:700px){.section-title{font-size:34px}section{padding:64px 0}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="inner">
+      <div class="tag">Dublin, Ireland • Graduate Software Engineer</div>
+      <h1>Christabel Jalloh</h1>
+      <p class="subtitle">Backend Developer & Software Engineering Graduate</p>
+      <p class="summary">
+        I build clean, production-ready backend systems with Node.js, Express, PostgreSQL and Prisma.
+        I’ve deployed real APIs for job tracking, interview preparation, and finance management.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-secondary" href="mailto:categie12@gmail.com">Get In Touch</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/crystalexcel" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="/Christabel-Jalloh-CV.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+    <div class="arrow">↓</div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="underline"></div>
+      <p class="lead">
+        First-Class Computer Science graduate with a strong interest in backend engineering, clean architecture,
+        authentication systems, database design, and real-world product thinking.
+      </p>
+      <div class="card">
+        <p>
+          I’ve recently focused on building and deploying backend applications that solve practical problems.
+          My work combines strong technical foundations with a user-centred mindset. I enjoy turning messy ideas
+          into structured, useful systems that are secure, scalable, and easy to understand.
+        </p>
+        <div class="highlights">
+          <div class="highlight">✅ First-Class BSc in Computer Science (Software Engineering)</div>
+          <div class="highlight">✅ 3 deployed backend API projects on GitHub + Render</div>
+          <div class="highlight">✅ Strong with Node.js, Express, PostgreSQL, Prisma, JWT</div>
+          <div class="highlight">✅ Comfortable debugging, deploying, and improving real systems</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="underline"></div>
+      <p class="lead">Tech stack I’m currently building with.</p>
+      <div class="skills">
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">Prisma ORM</div>
+        <div class="skill">JWT Authentication</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Render</div>
+        <div class="skill">Neon</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">MVC Architecture</div>
+        <div class="skill">Problem Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="underline"></div>
+      <p class="lead">Real backend systems I built and deployed.</p>
+      <div class="projects">
+        <article class="project">
+          <span class="badge">Backend API</span>
+          <h3>Job Application Tracker API</h3>
+          <p>Production-ready REST API for tracking job applications, follow-ups, and user-specific progress.</p>
+          <div class="stack"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span></div>
+          <div class="links">
+            <a href="https://github.com/crystalexcel/job-application-tracker-api" target="_blank">GitHub</a>
+            <a href="https://job-application-tracker-api-z6wl.onrender.com/health" target="_blank">Live API</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="badge">Backend API</span>
+          <h3>Interview Prep Platform API</h3>
+          <p>Backend system for coding interview practice, solution submissions, favourites, and progress tracking.</p>
+          <div class="stack"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span></div>
+          <div class="links">
+            <a href="https://github.com/crystalexcel/interview-prep-api" target="_blank">GitHub</a>
+            <a href="https://interview-prep-api-ymwvy.onrender.com/health" target="_blank">Live API</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="badge">Backend API</span>
+          <h3>Finance Tracker API</h3>
+          <p>Personal finance backend for transactions, categories, summaries, income, expenses, and analytics.</p>
+          <div class="stack"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span></div>
+          <div class="links">
+            <a href="https://github.com/crystalexcel/finance-tracker-api" target="_blank">GitHub</a>
+            <a href="https://finance-tracker-api-7pkw.onrender.com/health" target="_blank">Live API</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="cta">
+        <h2 style="margin-top:0;font-size:40px;">Let’s Work Together</h2>
+        <p style="max-width:700px;margin:0 auto 20px;opacity:.9;">
+          I’m currently looking for Graduate Software Engineer and Junior Backend opportunities in Ireland and the UK.
+        </p>
+        <div class="buttons" style="margin-bottom:0;">
+          <a class="btn btn-primary" href="mailto:categie12@gmail.com">Email Me</a>
+          <a class="btn btn-secondary" href="https://github.com/crystalexcel" target="_blank">View GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">© 2026 Christabel Jalloh • Built with HTML/CSS</div>
+</body>
+</html>
